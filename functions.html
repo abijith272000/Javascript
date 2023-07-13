@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="result"><br>
+    <div>
+    <div><table class="table table-dark"><br>
+          <tbody>
+            <tr>
+               
+                <td><input type="button" value="1" onclick="example('1')"></td>
+                <td><input type="button" value="2" onclick="values('2')"></td>
+                <td><input type="button" value="3" onclick="values('3')"></td>
+              </tr>
+              <tr>
+              <td><input type="button" value="4" onclick="values('4')"></td>
+                <td><input type="button" value="5" onclick="values('5')"></td>
+                <td><input type="button" value="6" onclick="values('6')"></td>
+              </tr>
+              <tr>
+                <td><input type="button" value="7" onclick="values('7')"></td>
+                  <td><input type="button" value="8" onclick="values('8')"></td>
+                  <td><input type="button" value="9" onclick="values('9')"></td>
+                </tr>
+                <tr>
+                  <td><input type="button" value="0" onclick="values('0')"></td>
+                      <td><input type="button" value="+" onclick="values('+')"></td>
+                      <td><input type="button" value="-" onclick="values('-')"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="*" onclick="values('*')"></td>
+                          <td><input type="button" value="/" onclick="values('/')"></td>
+                          <td><input type="button" value="clear" onclick="values()"></td>
+                        </tr>
+          
+        </tbody>
+      </table>
+    <script>
+
+function example(num){
+    document.getElementById('results').innerHTML=num
+       
+}
+    </script>
+    
+    
+    
+   
+</body>
+</html>

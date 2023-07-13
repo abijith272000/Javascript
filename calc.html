@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="result" readonly>
+    <input type="button" value="1" onclick="values('1')">
+    <input type="button" value="2" onclick="values('2')">
+    <input type="button" value="3" onclick="values('3')">
+    <input type="button" value="4" onclick="values('4')">
+    <input type="button" value="5" onclick="values('5')">
+    <input type="button" value="6" onclick="values('6')">
+    <input type="button" value="7" onclick="values('7')">
+    <input type="button" value="8" onclick="values('8')">
+    <input type="button" value="9" onclick="values('9')">
+    <input type="button" value="0" onclick="values('0')">
+    <input type="button" value="." onclick="values('.')">
+    <input type="button" value="+" onclick="appendoperator('+')">
+    <input type="button" value="-" onclick="appendoperator('-')">
+    <input type="button" value="" onclick="appendoperator('')">
+    <input type="button" value="/" onclick="appendoperator('/')">
+    <input type="button" value="=" onclick="calculate()">
+    <input type="button" value="clear" onclick="clearresult()">
+    <script>
+
+
+
+
+        function values(number){
+            document.getElementById("result").value +=number
+        }
+        function appendoperator(operator){
+            document.getElementById("result").value +=operator
+        }
+        function calculate(){
+            let expression = document.getElementById("result").value;
+            console.log(expression);
+            let result;
+            result=eval(expression)
+            document.getElementById('result').value=result;
+        }
+        function clearresult(){
+            document.getElementById('result').value="";
+        }
+    </script>
+
+</body>
+</html>
