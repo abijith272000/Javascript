@@ -6,43 +6,45 @@
     <title>Document</title>
 </head>
 <body>
-    <div class = "title"  align="center">  
-    </div>  
- <table border="2" align="center" cellpadding="15" cellspacing="12" style=" background-color: orange;">  
+  <div class = "title"  align="center">  
+  </div>  
+<form name="Calculator" class = "calculator" >  
+<table border="2" align="center" cellpadding="15" cellspacing="12" bgcolor="#c0c0c0">  
 <tr>  
 <td>  
-<div>
-    <input type="text" id="result" readonly>
-</div>
+<input type="text" name="Input" Size="35" id="display">  
 <br>  
 </td>  
 </tr>  
 <tr>  
 <td>  
-    <br>
-    <input type="button" onclick="values('1')" value="1">
-    <input type="button" onclick="values('2')" value="2">
-    <input type="button" onclick="values('3')" value="3">
-    <br>
-    <input type="button" onclick="values('4')" value="4">
-    <input type="button" onclick="values('5')" value="5">
-    <input type="button" onclick="values('6')" value="6">
-    <br>
-    <input type="button" onclick="values('7')" value="7">
-    <input type="button" onclick="values('8')" value="8">
-    <input type="button" onclick="values('9')" value="9">
-    <br>
-    <input type="button" onclick="values('+')" value="+">
-    <input type="button" onclick="values('-')" value="-">
-    <input type="button" onclick="values('*')" value="*">
-    <br>
-    <input type="button" onclick="values('/')" value="/">
-    <input type="button" onclick="calculate()" value="=">
-    <input type="button" onclick="values('clear')" value="clear">
-</div>
+<input type="button"  style="font-size:30px" value=" 1 ">
+<input type="button"  style = "font-size:30px" value=" 2 ">
+<input type="button"  style="font-size:30px" value=" 3 ">
+<input type="button"  style="font-size:30px" value=" + ">  
+<br>  
+<input type="button"  style="font-size:30px" value=" 4 ">
+<input type="button"  style="font-size:30px" value=" 5 ">
+<input type="button"  style="font-size:30px" value=" 6 ">
+<input type="button"  style="font-size:30px" value=" - ">  
+<br>  
+<input type="button"  style="font-size:30px" value=" 7 ">
+<input type="button"  style="font-size:30px" value=" 8 ">
+<input type="button"  style="font-size:30px" value=" 9 ">
+<input type="button"  style="font-size:30px" value=" * " >  
+<br>  
+<input type="button"  style="font-size:30px" value=" c " >
+<input type="button"  style="font-size:30px" value=" 0 ">
+<input type="button"  style="font-size:30px" value=" = " >  
+<input type="button"  style="font-size:30px" value=" / ">  
+<br>  
 </td>  
- </tr>  
+
+</tr>  
 </table>  
+</form>  
+ 
+ 
 <script>
     function values(number){
         document.getElementById('result').value +=number
@@ -56,7 +58,7 @@
             document.getElementById('result').value=result
         }
 
-</script>    
+</script>  
 <style>
  html {  
       height: 100vh;  
@@ -64,9 +66,27 @@
       align-items: center;  
       justify-content: center;  
       background-color: #2d3436;  
-  }
+      background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);  
+      font-family: 'Cookie'  
+ }
+ input[type=button] {  
+      width: 60px;  
+      height: 60px;  
+      float: left;  
+      padding: 0;  
+      margin: 5px;  
+      box-sizing: border-box;  
+      background: #ecedef;  
+      border: none;  
+      font-size: 30px;  
+      line-height: 30px;  
+      border-radius: 50%;  
+      font-weight: 700;  
+      color: #5E5858;  
+      cursor: pointer; }
 
 
-</style>
+
+</style>  
 </body>
 </html>
