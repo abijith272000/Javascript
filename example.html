@@ -12,31 +12,31 @@
 <table border="2" align="center" cellpadding="15" cellspacing="12" bgcolor="#c0c0c0">  
 <tr>  
 <td>  
-<input type="text" name="Input" Size="35" id="display">  
+<input type="text" name="Input" Size="35" id="result">  
 <br>  
 </td>  
 </tr>  
 <tr>  
 <td>  
-<input type="button"  style="font-size:30px" value=" 1 ">
-<input type="button"  style = "font-size:30px" value=" 2 ">
-<input type="button"  style="font-size:30px" value=" 3 ">
-<input type="button"  style="font-size:30px" value=" + ">  
+<input type="button"  style="font-size:30px" value=" 1 " onclick="values('1')">
+<input type="button"  style = "font-size:30px" value=" 2 "onclick="values('2')">
+<input type="button"  style="font-size:30px" value=" 3 "onclick="values('3')">
+<input type="button"  style="font-size:30px" value=" + "onclick="values('+')">  
 <br>  
-<input type="button"  style="font-size:30px" value=" 4 ">
-<input type="button"  style="font-size:30px" value=" 5 ">
-<input type="button"  style="font-size:30px" value=" 6 ">
-<input type="button"  style="font-size:30px" value=" - ">  
+<input type="button"  style="font-size:30px" value=" 4 "onclick="values('4')">
+<input type="button"  style="font-size:30px" value=" 5 "onclick="values('5')">
+<input type="button"  style="font-size:30px" value=" 6 "onclick="values('6')">
+<input type="button"  style="font-size:30px" value=" - "onclick="values('-')">  
 <br>  
-<input type="button"  style="font-size:30px" value=" 7 ">
-<input type="button"  style="font-size:30px" value=" 8 ">
-<input type="button"  style="font-size:30px" value=" 9 ">
-<input type="button"  style="font-size:30px" value=" * " >  
+<input type="button"  style="font-size:30px" value=" 7 "onclick="values('7')">
+<input type="button"  style="font-size:30px" value=" 8 "onclick="values('8')">
+<input type="button"  style="font-size:30px" value=" 9 "onclick="values('9')">
+<input type="button"  style="font-size:30px" value=" * "onclick="values('*')" >  
 <br>  
-<input type="button"  style="font-size:30px" value=" c " >
-<input type="button"  style="font-size:30px" value=" 0 ">
-<input type="button"  style="font-size:30px" value=" = " >  
-<input type="button"  style="font-size:30px" value=" / ">  
+<input type="button"  style="font-size:30px" value=" c " onclick="cleared()">
+<input type="button"  style="font-size:30px" value=" 0 "onclick="values('0')">
+<input type="button"  style="font-size:30px" value=" = " onclick="calculate()">  
+<input type="button"  style="font-size:30px" value=" / "onclick="values('/')">  
 <br>  
 </td>  
 
@@ -56,6 +56,9 @@
             console.log(expression);
             let result=eval(expression)
             document.getElementById('result').value=result
+        }
+        function cleared(){
+            document.getElementById('result').value=''
         }
 
 </script>  
