@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Scope
+{
+    let names="manu";
+    console.log(names);
+}
+
+
+//spread operator
+let num1=[1,2,3,4,5]
+let num2=[10,12,32,41]
+let num3=[123,221,332,453]
+
+console.log(...num1,...num2,...num3);
+
+
+//rest parameter
+function example(...a){
+    console.log(a);
+}
+let obj={
+    name:'abijith',
+    age:23
+}
+example(obj)
+
+
+//arrow function
+let example1=()=>{
+    let x=3;
+    console.log(x);
+    
+}
+// console.log(x,'logged');
+example1()
+
+//prototype
+function Person(first, last, age, eyecolor) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eyecolor;
+}
+
+const myFather = new Person("John", "Doe", 50, "blue");
+const myMother = new Person("Sally", "Rally", 48, "green");
+const mybrother=new Person("abc","zxc",20,'brown');
+console.log(myFather);
+console.log(myMother);
+console.log(mybrother);
+
+
+
+
+    </script>
+</body>
+</html>

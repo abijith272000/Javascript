@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="de"></p>
+    <p id="demo"></p>
+    <input type="text" id="ed"><button onclick='replace()'>REPLACE</button>
+<script>
+    function replace(){
+        
+        //word
+        let text = document.getElementById('ed').value
+        //replaceing the vowels in the given word
+        let c=text.replace(/[aeiou]/gi,"*")
+        //printing the word and changing
+        document.getElementById('de').innerHTML=text
+        document.getElementById('demo').innerHTML=c
+        
+    }
+</script>  
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="ed"><button onclick='replace()'>REPLACE</button>
+    <p id="demo"> </p>
+    <script>
+        function replace(){
+            //word
+            let text = document.getElementById('ed').value;
+            //spliting the word
+            const myArray = text.split(" ");
+            document.getElementById("demo").innerHTML = myArray;
+            //finding length
+            let lng = myArray.length
+            document.getElementById("demo").innerHTML = lng;
+        }
+        </script>
+        
+</body>
+</html>
